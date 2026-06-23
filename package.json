@@ -1,0 +1,39 @@
+{
+  "name": "goedkope-website-latenmaken",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --config eslint.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "clear-cache": "node -e \"const{rmSync,existsSync}=require('fs');const p='.next';if(existsSync(p)){rmSync(p,{recursive:true,force:true})}console.log('Next.js cache cleared')\"",
+    "postinstall": "node scripts/logo-message.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.1",
+    "framer-motion": "^11.18.2",
+    "gray-matter": "^4.0.3",
+    "next": "^16.2.6",
+    "next-mdx-remote": "^6.0.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-icons": "^5.6.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/node": "^20.17.6",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.8.3"
+  }
+}
